@@ -1,4 +1,3 @@
-// components/contact/contact-form.tsx
 'use client'
 
 import { useState } from 'react'
@@ -6,6 +5,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
+import emailjs from '@emailjs/browser'
+import { toast, Toaster } from 'sonner'
 
 interface FormData {
   name: string
@@ -21,29 +22,48 @@ export function ContactForm() {
     phone: '',
     message: ''
   })
-
+  
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Here you would typically send the form data to your backend
+    const loadingToast = toast.loading('Sending your message...')
+
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      console.log('Form submitted:', formData)
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: ''
-      })
-      alert('Thank you for your message. We will get back to you soon!')
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+        to_email: 'assignmentsbychen@gmail.com'
+      }
+
+      const response = await emailjs.send(
+        'service_icwqmya', 
+        'template_evgwk4u',
+        templateParams,
+        'fmeMJj-hLAJKbCZLu' 
+      )
+
+      if (response.status === 200) {
+        // Reset form
+        toast.dismiss(loadingToast)
+        toast.success('Message sent successfully! We\'ll get back to you soon.', {
+          duration: 5000,
+        })
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: ''
+        })
+        toast.success('Thank you for your message. We will get back to you soon!')
+      }
     } catch (error) {
       console.error('Error submitting form:', error)
-      alert('There was an error submitting your message. Please try again.')
+      toast.dismiss('There was an error submitting your message. Please try again.')
     }
 
     setIsSubmitting(false)
@@ -58,6 +78,18 @@ export function ContactForm() {
   }
 
   return (
+    <div>
+       <Toaster 
+        position="top-center"
+        toastOptions={{
+          style: {
+            background: 'rgba(0, 0, 0, 0.8)',
+            color: 'white',
+            backdropFilter: 'blur(8px)',
+          },
+        }}
+      />
+  
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="space-y-2">
         <Label htmlFor="name">Name</Label>
@@ -122,5 +154,6 @@ export function ContactForm() {
         {isSubmitting ? 'Sending...' : 'Send Message'}
       </Button>
     </form>
+    </div>
   )
 }
