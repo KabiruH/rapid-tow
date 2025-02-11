@@ -41,11 +41,12 @@ export function ContactForm() {
       }
 
       const response = await emailjs.send(
-        'service_icwqmya', 
-        'template_evgwk4u',
+        process.env.SERVICE_ID!, 
+        process.env.TEMPLATE_ID!,
         templateParams,
-        'fmeMJj-hLAJKbCZLu' 
-      )
+        process.env.PUBLIC_KEY! 
+    );
+    
 
       if (response.status === 200) {
         // Reset form
