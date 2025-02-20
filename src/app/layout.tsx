@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   alternates: {
-    canonical: 'https://rapidtowrecovery.co.ke'
+    canonical: 'https://rapidtowrecovery.com'
   },
   robots: {
     index: true,
