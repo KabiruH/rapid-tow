@@ -1,9 +1,10 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import { Navbar } from "@/components/layout/navbar";
+import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
 import "./globals.css"
 import { Toaster } from 'sonner'
+import { schemaData } from './schema'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,9 +17,26 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Rapid Tow Recovery - 24/7 Emergency Towing Services',
-  description: 'Your roadside lifeline, 24/7. Professional towing and roadside assistance services. Fast response, reliable service, competitive rates.',
-  keywords: 'towing service, roadside assistance, emergency towing, car recovery, 24/7 towing',
+  title: 'Rapid Tow Recovery - 24/7 Emergency Towing Services in Nairobi',
+  description: 'Your trusted 24/7 towing service in Nairobi, Kenya. Professional breakdown recovery, accident towing, and roadside assistance across Nairobi County. Quick response guaranteed.',
+  keywords: 'towing service Nairobi, breakdown recovery Kenya, emergency towing Nairobi, car recovery Nairobi, 24/7 towing Kenya, roadside assistance Nairobi, vehicle recovery Westlands, tow truck Kilimani, car breakdown Karen, accident recovery Parklands',
+  openGraph: {
+    title: 'Rapid Tow Recovery Nairobi - 24/7 Emergency Towing Services',
+    description: 'Professional towing services in Nairobi. Available 24/7 for emergency breakdown recovery and roadside assistance across Nairobi County.',
+    locale: 'en_KE',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://rapidtowrecovery.co.ke'
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 }
 
 export default function RootLayout({
@@ -28,9 +46,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(schemaData)
+          }}
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
         <div className="relative flex min-h-screen flex-col">
-         <Navbar/>
+          <Navbar/>
           <main className="flex-1">{children}</main>
           <Toaster/>
           <Footer />
@@ -38,5 +64,4 @@ export default function RootLayout({
       </body>
     </html>
   )
-}
-
+} 
