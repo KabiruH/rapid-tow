@@ -53,8 +53,8 @@ export default function ContactPage() {
                       <Mail className="w-5 h-5 text-red-400 mt-1" />
                       <div>
                         <p className="text-white font-medium">Email</p>
-                        <a href="mailto:info@rapidtowrecovery.com" className="text-white/80 hover:text-white">
-                          info@rapidtowrecovery.com
+                        <a href="mailto:kelvin@rapidtowandrecovery.com" className="text-white/80 hover:text-white">
+                        kelvin@rapidtowandrecovery.com
                         </a>
                       </div>
                     </div>
@@ -64,7 +64,7 @@ export default function ContactPage() {
                       <div>
                         <p className="text-white font-medium">Location</p>
                         <p className="text-white/80">
-                          [Your Service Area]
+                          TX
                         </p>
                       </div>
                     </div>

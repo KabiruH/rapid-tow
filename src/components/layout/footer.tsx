@@ -46,11 +46,11 @@ export function Footer() {
               </li>
               <li className="flex items-center">
                 <MapPin className="mr-2 h-4 w-4" />
-                [Your Service Area]
+                TX
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 h-4 w-4" />
-                info@rapidtowrecovery.com
+                kelvin@rapidtowandrecovery.com
               </li>
             </ul>
           </div>

@@ -37,7 +37,7 @@ export function ContactForm() {
         from_email: formData.email,
         phone: formData.phone,
         message: formData.message,
-        to_email: 'assignmentsbychen@gmail.com'
+        to_email: 'kelvin@rapidtowandrecovery.com'
       }
 
       const response = await emailjs.send(
