@@ -17,17 +17,17 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Rapid Tow Recovery - 24/7 Emergency Towing Services in Nairobi',
-  description: 'Your trusted 24/7 towing service in Nairobi, Kenya. Professional breakdown recovery, accident towing, and roadside assistance across Nairobi County. Quick response guaranteed.',
-  keywords: 'towing service Nairobi, breakdown recovery Kenya, emergency towing Nairobi, car recovery Nairobi, 24/7 towing Kenya, roadside assistance Nairobi, vehicle recovery Westlands, tow truck Kilimani, car breakdown Karen, accident recovery Parklands',
+  title: 'Rapid Tow Recovery - 24/7 Emergency Towing Services in Texas',
+  description: 'Your trusted 24/7 towing service in Texas. Professional breakdown recovery, accident towing, and roadside assistance throughout the state. Quick response guaranteed.',
+  keywords: 'towing service Texas, breakdown recovery Texas, emergency towing Houston, car recovery Dallas, 24/7 towing Austin, roadside assistance San Antonio, vehicle recovery Fort Worth, tow truck Texas, car breakdown El Paso, accident recovery Texas',
   openGraph: {
-    title: 'Rapid Tow Recovery Nairobi - 24/7 Emergency Towing Services',
-    description: 'Professional towing services in Nairobi. Available 24/7 for emergency breakdown recovery and roadside assistance across Nairobi County.',
-    locale: 'en_KE',
+    title: 'Rapid Tow Recovery Texas - 24/7 Emergency Towing Services',
+    description: 'Professional towing services in Texas. Available 24/7 for emergency breakdown recovery and roadside assistance across the state.',
+    locale: 'en_US',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://rapidtowrecovery.com'
+    canonical: 'https://www.rapidtowandrecovery.com'
   },
   robots: {
     index: true,
@@ -64,4 +64,4 @@ export default function RootLayout({
       </body>
     </html>
   )
-} 
+}

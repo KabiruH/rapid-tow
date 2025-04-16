@@ -13,8 +13,14 @@ export function Navbar() {
       <div className="container flex h-14 items-center">
         <div className="flex flex-1 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="ml-2 md:ml-11 md:p-11 font-bold text-slate-900 text-xl">Rapid Tow Recovery</span>
+            <img
+              src="/RPR.jpg"
+              alt="Rapid Tow Recovery Logo"
+              className="h-8 w-8 rounded-full object-cover md:ml-11"
+            />
+            <span className="ml-2 font-bold text-slate-900 text-xl">Rapid Tow Recovery</span>
           </Link>
+
 
           {/* Mobile Menu Button */}
           <button
@@ -56,36 +62,36 @@ export function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden">
           <nav className="flex flex-col space-y-4 px-4 py-6 bg-white border-t">
-            <Link 
-              href="/" 
+            <Link
+              href="/"
               className="text-slate-800 text-base hover:text-slate-600"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </Link>
-            <Link 
-              href="/services" 
+            <Link
+              href="/services"
               className="text-slate-800 text-base hover:text-slate-600"
               onClick={() => setIsMenuOpen(false)}
             >
               Services
             </Link>
-            <Link 
-              href="/about" 
+            <Link
+              href="/about"
               className="text-slate-800 text-base hover:text-slate-600"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
-            <Link 
-              href="/contact" 
+            <Link
+              href="/contact"
               className="text-slate-800 text-base hover:text-slate-600"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
             </Link>
-            <a 
-              href="tel: +1 (888) 673-7630" 
+            <a
+              href="tel: +1 (888) 673-7630"
               className="w-full"
               onClick={() => setIsMenuOpen(false)}
             >

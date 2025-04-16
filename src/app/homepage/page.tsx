@@ -50,7 +50,13 @@ export default function Homepage() {
         {/* Hero Section */}
         <section className=" md:min-h-[90vh] flex items-center justify-center pt-16 md:pt-20">
           <div className="container mx-auto px-4">
+          <img
+    src="/RPR.jpg"
+    alt="Rapid Tow Recovery Logo"
+    className="absolute top-1/6 -translate-x-1/5 -translate-y-1/2 h-36 w-36 rounded-full object-cover opacity-12 z-1/2 mb-11"
+  />
             <div className="max-w-3xl mx-auto text-center">
+              
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 text-white leading-tight">
                 Your Roadside Lifeline, 24/7
               </h1>
