@@ -43,8 +43,8 @@ export default function ContactPage() {
                       <Phone className="w-5 h-5 text-red-400 mt-1" />
                       <div>
                         <p className="text-white font-medium">Phone</p>
-                        <a href="tel:+1-555-0123" className="text-white/80 hover:text-white">
-                          +1 (555) 0123
+                        <a href="tel:+1-888-673-7630" className="text-white/80 hover:text-white">
+                        +1-888-673-7630
                         </a>
                       </div>
                     </div>
@@ -88,8 +88,8 @@ export default function ContactPage() {
                   <p className="text-white/80 mb-4">
                     For immediate assistance, call our 24/7 emergency line. We'll dispatch the nearest available tow truck to your location.
                   </p>
-                  <a href="tel:+1-555-0123" className="inline-block text-lg font-semibold text-red-400 hover:text-red-300">
-                    +1 (555) 0123
+                  <a href="tel:+1-888-673-7630" className="inline-block text-lg font-semibold text-red-400 hover:text-red-300">
+                  +1-888-673-7630
                   </a>
                 </div>
               </div>

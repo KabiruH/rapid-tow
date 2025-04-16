@@ -58,7 +58,7 @@ export default function Homepage() {
                 Fast, reliable towing and roadside assistance when you need it most. We're here to help, anytime, anywhere.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-3 md:gap-4 px-4 sm:px-0">
-                <a href="tel:+1-555-0123" className="w-full sm:w-auto">
+                <a href="tel:+1-888-673-7630" className="w-full sm:w-auto">
                   <Button 
                     size="lg" 
                     className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-6 text-lg"
@@ -127,13 +127,13 @@ export default function Homepage() {
               <p className="text-lg md:text-xl text-white/90 mb-8 px-4 md:px-0">
                 Don't let a breakdown ruin your day. Our professional team is just a phone call away.
               </p>
-              <a href="tel:+1-555-0123">
+              <a href="tel:+1-888-673-7630">
                 <Button 
                   size="lg" 
                   className="bg-red-600 hover:bg-red-700 text-white font-semibold py-6 text-lg w-full sm:w-auto px-8"
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Now: +1 (555) 0123
+                  Call Now: +1-888-673-7630
                 </Button>
               </a>
             </div>

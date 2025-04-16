@@ -124,7 +124,7 @@ export default function ServicesPage() {
                 </ul>
 
                 <div className="pt-4 border-t border-white/10">
-                <a href="tel:+1-555-0123">
+                <a href="tel:+1-888-673-7630">
                   <Button 
                     variant="secondary"
                     className="w-full bg-white/10 hover:bg-white/20 text-white"
@@ -147,13 +147,13 @@ export default function ServicesPage() {
               <p className="text-white/90 mb-6">
                 Our professional team is available 24/7 to help you with any vehicle emergency.
               </p>
-              <a href="tel:+1-555-0123">
+              <a href="tel:+1-888-673-7630">
                 <Button 
                   size="lg"
                   className="bg-red-600 hover:bg-red-700 text-white font-semibold py-6"
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  Call Now: +1 (555) 0123
+                  Call Now: +1-888-673-7630
                 </Button>
               </a>
             </div>

@@ -146,7 +146,7 @@ export default function AboutPage() {
               <p className="text-white/90 mb-6">
                 Whether you need emergency assistance or have questions about our services, we're here to help.
               </p>
-              <a href="tel:+1-555-0123">
+              <a href="tel: +1-888-673-7630">
                 <Button 
                   size="lg"
                   className="bg-red-600 hover:bg-red-700 text-white font-semibold py-6"

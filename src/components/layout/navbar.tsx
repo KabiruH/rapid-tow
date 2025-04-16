@@ -42,7 +42,7 @@ export function Navbar() {
             <Link href="/contact" className="transition-colors text-slate-800 text-base">
               Contact
             </Link>
-            <a href="tel:+1-555-0123">
+            <a href="tel: +1 (888) 673-7630">
               <Button variant="default" size="lg">
                 <Phone className="mr-2 h-4 w-4" />
                 Call Now
@@ -85,7 +85,7 @@ export function Navbar() {
               Contact
             </Link>
             <a 
-              href="tel:+1-555-0123" 
+              href="tel: +1 (888) 673-7630" 
               className="w-full"
               onClick={() => setIsMenuOpen(false)}
             >

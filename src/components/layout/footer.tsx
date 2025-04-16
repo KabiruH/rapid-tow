@@ -14,7 +14,7 @@ export function Footer() {
               className="mt-4 flex items-center text-sm hover:text-primary"
             >
               <Phone className="mr-2 h-4 w-4" />
-              +1 (555) 0123
+              +1 (888) 673-7630
             </a>
           </div>
 
