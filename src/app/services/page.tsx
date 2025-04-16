@@ -92,11 +92,13 @@ export default function ServicesPage() {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
-            <img
+            <div className="relative">  
+        <img
     src="/RPR.jpg"
     alt="Rapid Tow Recovery Logo"
-    className="absolute top-1/6 -translate-x-1/5 -translate-y-1/2 h-36 w-36 rounded-full object-cover opacity-12 z-1/2 mb-11"
+    className="absolute top-1/2 left-9 transform -translate-x-1/2 -translate-y-1/2 h-20 w-30 rounded-full object-cover opacity-80 z-0"
   />
+  </div> 
               Our Services
             </h1>
             <p className="text-lg text-white/90 max-w-2xl mx-auto">
