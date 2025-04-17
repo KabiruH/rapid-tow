@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Phone, Clock, Truck, Shield } from "lucide-react"
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 const backgroundImages = [
   '/pic1.jpg',
@@ -23,8 +24,10 @@ export default function Homepage() {
     return () => clearInterval(timer)
   }, [])
 
+  
   return (
     <div className="relative min-h-screen">
+      
       {/* Background carousel */}
       <div className="fixed inset-0 w-full h-full -z-10">
         {backgroundImages.map((image, index) => (
@@ -76,13 +79,6 @@ export default function Homepage() {
                     Emergency Towing
                   </Button>
                 </a>
-                <Button 
-                  variant="secondary" 
-                  size="lg" 
-                  className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white font-semibold py-6 text-lg backdrop-blur-sm"
-                >
-                  Our Services
-                </Button>
               </div>
             </div>
           </div>

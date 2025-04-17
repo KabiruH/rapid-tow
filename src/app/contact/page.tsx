@@ -3,6 +3,8 @@ import { ContactForm } from "@/components/contactForm/ContactForm"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
 export default function ContactPage() {
+
+  
   return (
     <div className="relative w-full min-h-screen">
       {/* Background Image */}
@@ -23,13 +25,6 @@ export default function ContactPage() {
             {/* Header */}
             <div className="text-center mb-12">
               <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
-              <div className="relative">  
-        <img
-    src="/RPR.jpg"
-    alt="Rapid Tow Recovery Logo"
-    className="absolute top-1/2 left-9 transform -translate-x-1/2 -translate-y-1/2 h-20 w-30 rounded-full object-cover opacity-80 z-0"
-  />
-  </div> 
                 Contact Us
               </h1>
               <p className="text-lg text-white/90 max-w-2xl mx-auto">
@@ -39,7 +34,7 @@ export default function ContactPage() {
 
             {/* Content Grid */}
             <div className="grid md:grid-cols-2 gap-12">
-              {/* Contact Information */}
+            
               <div className="space-y-8">
                 <div className="bg-black/30 backdrop-blur-md p-6 rounded-lg border border-white/10">
                   <h2 className="text-xl font-semibold text-white mb-6">
